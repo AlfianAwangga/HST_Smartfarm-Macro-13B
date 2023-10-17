@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">HST_SmartFarm</string>
+    <string name="Welcome">Selamat Datang di SmartFarm</string>
+    <string name="regist">Buat akun untuk Masuk Aplikasi</string>
+    <string name="nama">Nama Lengkap</string>
+    <string name="email">Email</string>
+    <string name="notelp">Nomor Telepon</string>
+    <string name="password">Kata Sandi</string>
+    <string name="no_akun">Belum punya akun?</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

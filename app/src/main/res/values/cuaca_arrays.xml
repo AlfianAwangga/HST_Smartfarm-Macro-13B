@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="hari">
+        <item>Senin</item>
+        <item>Selasa</item>
+        <item>Rabu</item>
+        <item>Kamis</item>
+        <item>Jumat</item>
+        <item>Sabtu</item>
+        <item>Minggu</item>
+    </string-array>
+    <string-array name="perkiraanSuhu1">
+        <item>30°</item>
+        <item>29°</item>
+        <item>22°</item>
+        <item>20°</item>
+        <item>18°</item>
+        <item>27°</item>
+        <item>31°</item>
+    </string-array>
+    <string-array name="perkiraanSuhu2">
+        <item>35°</item>
+        <item>32°</item>
+        <item>28°</item>
+        <item>26°</item>
+        <item>15°</item>
+        <item>30°</item>
+        <item>34°</item>
+    </string-array>
+</resources>

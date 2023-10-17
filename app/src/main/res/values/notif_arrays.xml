@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="judulNotif">
+        <item>Automasi berhasil dilakukan</item>
+        <item>Automasi berhasil dilakukan</item>
+        <item>Lahan berhasil ditambahkan</item>
+        <item>Selamat Bergabung</item>
+    </string-array>
+    <string-array name="keteranganNotif">
+        <item>Penyiraman pada lahan Padi Rojo Lele berhasil dilakukan</item>
+        <item>Pengusiran hama pada lahan Padi Rojo Lele berhasil dilakukan</item>
+        <item>Penambahan lahan Tomat Cheri berhasil dilakukan</item>
+        <item>Selamat bergabung Bapak/Ibu di SmartFarm</item>
+    </string-array>
+</resources>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="namaLahan">
+        <item>Padi Rojo Lele</item>
+        <item>Tomat Cheri</item>
+    </string-array>
+    <string-array name="tanggalTanam">
+        <item>17/06/2023</item>
+        <item>15/11/2022</item>
+    </string-array>
+    <string-array name="tanggalPanen">
+        <item>20/09/2023</item>
+        <item>14/02/2023</item>
+    </string-array>
+    <string-array name="luasLahan">
+        <item>16 Ha</item>
+        <item>5 Ha</item>
+    </string-array>
+    <string-array name="namaModul">
+        <item>Gatotkaca 1</item>
+        <item>Gatotkaca 2</item>
+    </string-array>
+    <string-array name="versiModul">
+        <item>v 1.001</item>
+        <item>V 1.002</item>
+    </string-array>
+    <string-array name="kelembabanTanah">
+        <item>67%</item>
+        <item>75%</item>
+    </string-array>
+    <string-array name="unsurHara">
+        <item>55%</item>
+        <item>46%</item>
+    </string-array>
+    <string-array name="phTanah">
+        <item>7</item>
+        <item>9</item>
+    </string-array>
+    <string-array name="temperatur">
+        <item>28</item>
+        <item>26</item>
+    </string-array>
+</resources>

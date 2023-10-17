@@ -1,0 +1,370 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="1500dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="1500dp"
+        tools:context=".Activities.DetailLahanActivity">
+
+        <RelativeLayout
+            android:id="@+id/bg_data"
+            android:layout_width="match_parent"
+            android:layout_height="454dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="12dp"
+            android:background="@drawable/stroke_fill_grey"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/bg_sensor" />
+
+        <RelativeLayout
+            android:id="@+id/bg_sensor"
+            android:layout_width="match_parent"
+            android:layout_height="310dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="12dp"
+            android:background="@drawable/stroke_fill_grey"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/iv_detail_gambar">
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_status_sensor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="28dp"
+            android:layout_marginTop="20dp"
+            android:text="Status Sensor Tanaman"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/bg_sensor" />
+
+        <ImageView
+            android:id="@+id/iv_detail_gambar"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/bg_hijau"
+            app:srcCompat="@drawable/lahan_padi" />
+
+        <ImageView
+            android:id="@+id/iv_kelembaban_tanah"
+            android:layout_width="140dp"
+            android:layout_height="110dp"
+            android:layout_marginTop="16dp"
+            app:layout_constraintStart_toStartOf="@+id/tv_status_sensor"
+            app:layout_constraintTop_toBottomOf="@+id/tv_status_sensor"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/illust_kelembaban" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="55dp"
+            android:text="Kelembaban Tanah"
+            android:textColor="#FFFFFF"
+            android:textSize="13sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/iv_kelembaban_tanah"
+            app:layout_constraintStart_toStartOf="@+id/iv_kelembaban_tanah"
+            app:layout_constraintTop_toTopOf="@+id/iv_kelembaban_tanah" />
+
+        <TextView
+            android:id="@+id/tv_kelembaban"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Data"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/iv_kelembaban_tanah"
+            app:layout_constraintStart_toStartOf="@+id/iv_kelembaban_tanah"
+            app:layout_constraintTop_toBottomOf="@+id/textView6" />
+
+        <ImageView
+            android:id="@+id/iv_hara"
+            android:layout_width="140dp"
+            android:layout_height="110dp"
+            android:layout_marginEnd="28dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/iv_kelembaban_tanah"
+            app:srcCompat="@drawable/illust_hara" />
+
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="55dp"
+            android:text="Unsur Hara"
+            android:textColor="#FFFFFF"
+            android:textSize="13sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/iv_hara"
+            app:layout_constraintStart_toStartOf="@+id/iv_hara"
+            app:layout_constraintTop_toTopOf="@+id/iv_hara" />
+
+        <TextView
+            android:id="@+id/tv_hara"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Data"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/iv_hara"
+            app:layout_constraintStart_toStartOf="@+id/iv_hara"
+            app:layout_constraintTop_toBottomOf="@+id/textView9" />
+
+        <ImageView
+            android:id="@+id/iv_ph"
+            android:layout_width="140dp"
+            android:layout_height="110dp"
+            android:layout_marginTop="16dp"
+            app:layout_constraintEnd_toEndOf="@+id/iv_kelembaban_tanah"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/iv_kelembaban_tanah"
+            app:layout_constraintTop_toBottomOf="@+id/iv_kelembaban_tanah"
+            app:srcCompat="@drawable/illust_ph" />
+
+        <TextView
+            android:id="@+id/textView11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="55dp"
+            android:text="Ph Tanah"
+            android:textColor="#FFFFFF"
+            android:textSize="13sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/iv_ph"
+            app:layout_constraintStart_toStartOf="@+id/iv_ph"
+            app:layout_constraintTop_toTopOf="@+id/iv_ph" />
+
+        <TextView
+            android:id="@+id/tv_ph"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Data"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/iv_ph"
+            app:layout_constraintStart_toStartOf="@+id/iv_ph"
+            app:layout_constraintTop_toBottomOf="@+id/textView11" />
+
+        <ImageView
+            android:id="@+id/iv_temperatur"
+            android:layout_width="140dp"
+            android:layout_height="110dp"
+            android:layout_marginTop="16dp"
+            app:layout_constraintEnd_toEndOf="@+id/iv_hara"
+            app:layout_constraintStart_toStartOf="@+id/iv_hara"
+            app:layout_constraintTop_toBottomOf="@+id/iv_hara"
+            app:srcCompat="@drawable/illust_temperatur" />
+
+        <TextView
+            android:id="@+id/textView14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="55dp"
+            android:text="Temperatur"
+            android:textColor="#FFFFFF"
+            android:textSize="13sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/iv_temperatur"
+            app:layout_constraintStart_toStartOf="@+id/iv_temperatur"
+            app:layout_constraintTop_toTopOf="@+id/iv_temperatur" />
+
+        <TextView
+            android:id="@+id/tv_temperatur"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Data"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/iv_temperatur"
+            app:layout_constraintStart_toStartOf="@+id/iv_temperatur"
+            app:layout_constraintTop_toBottomOf="@+id/textView14" />
+
+        <TextView
+            android:id="@+id/tv_jenis_tanaman"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Jenis Tanaman"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/iv_ph"
+            app:layout_constraintTop_toTopOf="@+id/bg_data" />
+
+        <TextView
+            android:id="@+id/tv_detail_nama"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Nama Tanaman"
+            app:layout_constraintStart_toStartOf="@+id/tv_jenis_tanaman"
+            app:layout_constraintTop_toBottomOf="@+id/tv_jenis_tanaman" />
+
+        <TextView
+            android:id="@+id/tv_luas_lahan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="28dp"
+            android:text="Luas Lahan"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/tv_detail_nama"
+            app:layout_constraintTop_toBottomOf="@+id/tv_detail_nama" />
+
+        <TextView
+            android:id="@+id/tv_detail_luas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="luas"
+            app:layout_constraintStart_toStartOf="@+id/tv_luas_lahan"
+            app:layout_constraintTop_toBottomOf="@+id/tv_luas_lahan" />
+
+        <TextView
+            android:id="@+id/tv_tanam"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="28dp"
+            android:text="Tanggal Tanam"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/tv_detail_luas"
+            app:layout_constraintTop_toBottomOf="@+id/tv_detail_luas" />
+
+        <TextView
+            android:id="@+id/tv_detail_tanam"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="tanam"
+            app:layout_constraintStart_toStartOf="@+id/tv_tanam"
+            app:layout_constraintTop_toBottomOf="@+id/tv_tanam" />
+
+        <TextView
+            android:id="@+id/tv_perkiraan_panen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="28dp"
+            android:text="Perkiraan Panen"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/tv_detail_tanam"
+            app:layout_constraintTop_toBottomOf="@+id/tv_detail_tanam" />
+
+        <TextView
+            android:id="@+id/tv_detail_panen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="panen"
+            app:layout_constraintStart_toStartOf="@+id/tv_perkiraan_panen"
+            app:layout_constraintTop_toBottomOf="@+id/tv_perkiraan_panen" />
+
+        <TextView
+            android:id="@+id/tv_modul_dipakai"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="28dp"
+            android:text="Modul yang dipakai"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/tv_detail_panen"
+            app:layout_constraintTop_toBottomOf="@+id/tv_detail_panen" />
+
+        <TextView
+            android:id="@+id/tv_detail_modul"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Nama Modul"
+            app:layout_constraintStart_toStartOf="@+id/tv_modul_dipakai"
+            app:layout_constraintTop_toBottomOf="@+id/tv_modul_dipakai" />
+
+        <TextView
+            android:id="@+id/tv_versi_modul_dipakai"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="28dp"
+            android:text="Versi Modul"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/tv_detail_modul"
+            app:layout_constraintTop_toBottomOf="@+id/tv_detail_modul" />
+
+        <TextView
+            android:id="@+id/tv_detail_versi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="versi"
+            app:layout_constraintStart_toStartOf="@+id/tv_versi_modul_dipakai"
+            app:layout_constraintTop_toBottomOf="@+id/tv_versi_modul_dipakai" />
+
+        <Button
+            android:id="@+id/btn_hapus_lahan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="80dp"
+            android:backgroundTint="#FFFFFF"
+            android:text="Hapus Lahan"
+            android:textColor="#FF0000"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/bg_data"
+            app:layout_constraintTop_toBottomOf="@+id/bg_data"
+            app:strokeColor="#C1C1C1"
+            app:strokeWidth="1dip" />
+
+        <Button
+            android:id="@+id/btn_selesai_tanam"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:text="Selesai Tanam"
+            app:layout_constraintEnd_toEndOf="@+id/bg_data"
+            app:layout_constraintTop_toTopOf="@+id/btn_hapus_lahan" />
+
+        <FrameLayout
+            android:id="@+id/bg_hijau"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/primary"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/tv_detail_lahan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="0dp"
+                android:text="Informasi Lahan"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/iv_back"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="12dp"
+                app:srcCompat="@drawable/baseline_arrow_back_24" />
+
+        </FrameLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

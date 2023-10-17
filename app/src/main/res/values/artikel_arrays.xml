@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="judulArtikel">
+        <item>Hama Ulat Grayak Pada Jagung</item>
+        <item>5 Hama Utama yang Menyerang Padi</item>
+        <item>Pengendalian Hama Wereng Pada Tanaman Padi</item>
+        <item>Mengenal Lebih Dekat Konsep Pertanian Berkelanjutan</item>
+    </string-array>
+    <string-array name="tanggalUpload">
+        <item>16 Oktober 2023</item>
+        <item>12 Oktober 2023</item>
+        <item>30 September 2023</item>
+        <item>27 September 2023</item>
+    </string-array>
+</resources>

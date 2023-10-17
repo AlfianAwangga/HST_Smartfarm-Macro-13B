@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="namaToko">
+        <item>Sinar Tani</item>
+        <item>Maju Selalu</item>
+        <item>Jaya Mukti</item>
+        <item>Abdi Jaya</item>
+    </string-array>
+    <string-array name="alamatToko">
+        <item>Jl. Madu No 17, Jawa Barat Bandung</item>
+        <item>Jl. Yahyah No 19, Jawa Barat Bandung</item>
+        <item>Jl. Pengabdian Masyarakat, Jawa Barat Bandung</item>
+        <item>Jl. Madu No 17, Jawa Barat Bandung</item>
+    </string-array>
+</resources>

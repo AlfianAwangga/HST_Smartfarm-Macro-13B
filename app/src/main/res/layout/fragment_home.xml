@@ -1,0 +1,462 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".Fragments.HomeFragment">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="420dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="12dp"
+            android:layout_marginBottom="100dp"
+            android:background="@drawable/stroke_fill_grey"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/bg_cuaca">
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/bg_cuaca"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="12dp"
+            android:background="@drawable/stroke_fill_grey"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/bg_kondisi">
+
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/iv_cuaca"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="35dp"
+            android:src="@drawable/cuaca"
+            app:layout_constraintEnd_toEndOf="@+id/iv_air"
+            app:layout_constraintStart_toStartOf="@+id/iv_air"
+            app:layout_constraintTop_toBottomOf="@+id/bg_kondisi" />
+
+        <RelativeLayout
+            android:id="@+id/bg_kondisi"
+            android:layout_width="match_parent"
+            android:layout_height="310dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="120dp"
+            android:layout_marginEnd="12dp"
+            android:background="@drawable/stroke_fill_grey"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/rv_lahan">
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/bg_hijau"
+            android:layout_width="match_parent"
+            android:layout_height="190dp"
+            android:background="@drawable/radius_bg"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/iv_support"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginEnd="28dp"
+            android:background="@drawable/stroke_grey"
+            android:padding="10dp"
+            android:src="@drawable/menu_support"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/iv_update" />
+
+        <ImageView
+            android:id="@+id/iv_update"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginEnd="36dp"
+            android:background="@drawable/stroke_grey"
+            android:padding="10dp"
+            app:layout_constraintEnd_toStartOf="@+id/iv_support"
+            app:layout_constraintTop_toTopOf="@+id/iv_toko"
+            app:srcCompat="@drawable/menu_update_modul" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_lahan"
+            android:layout_width="match_parent"
+            android:layout_height="142dp"
+            android:layout_marginTop="40dp"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_home_nama"
+            tools:listitem="@layout/list_lahan" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="67dp"
+            android:layout_height="58dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="12dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0"
+            app:srcCompat="@drawable/profile" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="Selamat Pagi,"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            app:layout_constraintStart_toEndOf="@+id/imageView2"
+            app:layout_constraintTop_toTopOf="@+id/imageView2" />
+
+        <TextView
+            android:id="@+id/tv_home_nama"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:text="Nama Lengkap"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@+id/imageView2"
+            app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+        <ImageView
+            android:id="@+id/iv_notif"
+            android:layout_width="34dp"
+            android:layout_height="33dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/baseline_notifications_active_24" />
+
+        <ImageView
+            android:id="@+id/iv_manajemen"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="28dp"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/stroke_grey"
+            android:padding="10dp"
+            android:src="@drawable/menu_manajemen"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/rv_lahan" />
+
+        <ImageView
+            android:id="@+id/iv_toko"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="36dp"
+            android:background="@drawable/stroke_grey"
+            android:padding="10dp"
+            android:src="@drawable/menu_toko"
+            app:layout_constraintStart_toEndOf="@+id/iv_manajemen"
+            app:layout_constraintTop_toTopOf="@+id/iv_manajemen" />
+
+        <TextView
+            android:id="@+id/tv_manajemen"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="22dp"
+            android:layout_marginTop="4dp"
+            android:gravity="center"
+            android:text="Manajemen Lahan"
+            android:textSize="10sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/iv_manajemen" />
+
+        <TextView
+            android:id="@+id/tv_toko"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="4dp"
+            android:gravity="center"
+            android:text="Toko Sekitar"
+            android:textSize="10sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@+id/tv_manajemen"
+            app:layout_constraintTop_toBottomOf="@+id/iv_toko" />
+
+        <TextView
+            android:id="@+id/tv_update"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="26dp"
+            android:gravity="center"
+            android:text="Pembaruan Modul"
+            android:textSize="10sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toStartOf="@+id/tv_support"
+            app:layout_constraintTop_toBottomOf="@+id/iv_update" />
+
+        <TextView
+            android:id="@+id/tv_support"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="23dp"
+            android:gravity="center"
+            android:text="Pelayanan Pengguna"
+            android:textSize="10sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/iv_support" />
+
+        <TextView
+            android:id="@+id/tv_kondisi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:text="Kondisi Lahan"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/iv_manajemen"
+            app:layout_constraintTop_toBottomOf="@+id/tv_manajemen" />
+
+        <ImageView
+            android:id="@+id/iv_cahaya"
+            android:layout_width="140dp"
+            android:layout_height="110dp"
+            android:layout_marginTop="16dp"
+            app:layout_constraintStart_toStartOf="@+id/tv_kondisi"
+            app:layout_constraintTop_toBottomOf="@+id/tv_kondisi"
+            app:srcCompat="@drawable/illust_cahaya" />
+
+        <TextView
+            android:id="@+id/tv_cahaya"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="55dp"
+            android:text="Intensitas Cahaya"
+            android:textColor="#FFFFFF"
+            android:textSize="13sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/iv_cahaya"
+            app:layout_constraintStart_toStartOf="@+id/iv_cahaya"
+            app:layout_constraintTop_toTopOf="@+id/iv_cahaya" />
+
+        <TextView
+            android:id="@+id/tv_pcahaya"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="57%"
+            android:textColor="#FFFFFF"
+            android:textSize="13sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/iv_cahaya"
+            app:layout_constraintStart_toStartOf="@+id/iv_cahaya"
+            app:layout_constraintTop_toBottomOf="@+id/tv_cahaya" />
+
+        <ImageView
+            android:id="@+id/iv_angin"
+            android:layout_width="140dp"
+            android:layout_height="110dp"
+            app:layout_constraintEnd_toEndOf="@+id/iv_support"
+            app:layout_constraintTop_toTopOf="@+id/iv_cahaya"
+            app:srcCompat="@drawable/illust_angin" />
+
+        <TextView
+            android:id="@+id/tv_angin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="55dp"
+            android:text="Kecepatan Angin"
+            android:textColor="#FFFFFF"
+            android:textSize="13sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/iv_angin"
+            app:layout_constraintStart_toStartOf="@+id/iv_angin"
+            app:layout_constraintTop_toTopOf="@+id/iv_angin" />
+
+        <TextView
+            android:id="@+id/tv_pangin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="16Km/H"
+            android:textColor="#FFFFFF"
+            android:textSize="13sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/iv_angin"
+            app:layout_constraintStart_toStartOf="@+id/iv_angin"
+            app:layout_constraintTop_toBottomOf="@+id/tv_angin" />
+
+        <ImageView
+            android:id="@+id/iv_air"
+            android:layout_width="140dp"
+            android:layout_height="110dp"
+            android:layout_marginTop="16dp"
+            app:layout_constraintEnd_toEndOf="@+id/iv_cahaya"
+            app:layout_constraintStart_toStartOf="@+id/iv_cahaya"
+            app:layout_constraintTop_toBottomOf="@+id/iv_cahaya"
+            app:srcCompat="@drawable/illust_air" />
+
+        <TextView
+            android:id="@+id/tv_air"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="55dp"
+            android:shadowColor="#FFFFFF"
+            android:text="Jumlah Air"
+            android:textColor="#FFFFFF"
+            android:textSize="13sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/iv_air"
+            app:layout_constraintHorizontal_bias="0.513"
+            app:layout_constraintStart_toStartOf="@+id/iv_air"
+            app:layout_constraintTop_toTopOf="@+id/iv_air"
+            app:layout_constraintVertical_bias="0.756" />
+
+        <TextView
+            android:id="@+id/textView13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="110 Liter"
+            android:textColor="#FFFFFF"
+            android:textSize="13sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/iv_air"
+            app:layout_constraintStart_toStartOf="@+id/iv_air"
+            app:layout_constraintTop_toBottomOf="@+id/tv_air" />
+
+        <ImageView
+            android:id="@+id/iv_lembab"
+            android:layout_width="140dp"
+            android:layout_height="110dp"
+            android:layout_marginTop="16dp"
+            app:layout_constraintEnd_toEndOf="@+id/iv_angin"
+            app:layout_constraintStart_toStartOf="@+id/iv_angin"
+            app:layout_constraintTop_toBottomOf="@+id/iv_angin"
+            app:srcCompat="@drawable/illust_lembap" />
+
+        <TextView
+            android:id="@+id/tv_lembab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="55dp"
+            android:text="Kelembaban"
+            android:textColor="#FFFFFF"
+            android:textSize="13sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/iv_lembab"
+            app:layout_constraintStart_toStartOf="@+id/iv_lembab"
+            app:layout_constraintTop_toTopOf="@+id/iv_lembab" />
+
+        <TextView
+            android:id="@+id/tv_plembab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="52%"
+            android:textColor="#FFFFFF"
+            android:textSize="13sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/iv_lembab"
+            app:layout_constraintStart_toStartOf="@+id/iv_lembab"
+            app:layout_constraintTop_toBottomOf="@+id/tv_lembab" />
+
+        <TextView
+            android:id="@+id/tv_kota"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="38dp"
+            android:text="Bandung"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@+id/iv_cuaca"
+            app:layout_constraintTop_toBottomOf="@+id/bg_kondisi" />
+
+        <TextView
+            android:id="@+id/tv_cuaca"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cerah Berawan"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="@+id/tv_kota"
+            app:layout_constraintTop_toBottomOf="@+id/tv_kota" />
+
+        <TextView
+            android:id="@+id/tv_suhu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="30°"
+            android:textSize="48sp"
+            app:layout_constraintStart_toStartOf="@+id/tv_cuaca"
+            app:layout_constraintTop_toBottomOf="@+id/tv_cuaca" />
+
+        <TextView
+            android:id="@+id/tv_suhu_t"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="32dp"
+            android:text="T : 32°"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/tv_suhu" />
+
+        <TextView
+            android:id="@+id/tv_suhu_r"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="7dp"
+            android:text="R : 25°"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_suhu"
+            app:layout_constraintStart_toStartOf="@+id/tv_suhu_t" />
+
+        <TextView
+            android:id="@+id/tv_perkiraan_cuaca"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="26dp"
+            android:text="Perkiraan Cuaca"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/iv_cuaca"
+            app:layout_constraintTop_toBottomOf="@+id/bg_cuaca" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_cuaca"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="28dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="28dp"
+            app:layout_constraintEnd_toEndOf="@+id/bg_cuaca"
+            app:layout_constraintStart_toStartOf="@+id/bg_cuaca"
+            app:layout_constraintTop_toBottomOf="@+id/tv_perkiraan_cuaca"
+            tools:listitem="@layout/list_perkiraan_cuaca" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

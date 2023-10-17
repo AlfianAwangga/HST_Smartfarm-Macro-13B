@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="modul">
+        <item>Modul GatotKaca 1</item>
+        <item>Modul GatotKaca 2</item>
+    </string-array>
+    <string-array name="versi">
+        <item>V 2.00</item>
+        <item>V 2.31</item>
+    </string-array>
+</resources>
