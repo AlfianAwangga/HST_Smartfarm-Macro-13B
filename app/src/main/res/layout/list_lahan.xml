@@ -31,7 +31,7 @@
             android:layout_width="103dp"
             android:layout_height="match_parent"
             android:adjustViewBounds="true"
-            android:scaleType="fitXY"
+            android:scaleType="centerCrop"
             android:src="@drawable/lahan_padi" />
 
     </androidx.cardview.widget.CardView>
