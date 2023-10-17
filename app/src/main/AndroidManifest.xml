@@ -19,9 +19,6 @@
             android:name=".Activities.ModulActivity"
             android:exported="false" />
         <activity
-            android:name=".tes"
-            android:exported="false" />
-        <activity
             android:name=".Activities.ManajemenLahanActivity"
             android:exported="false" />
         <activity
@@ -29,9 +26,6 @@
             android:exported="false" />
         <activity
             android:name=".Activities.NotifActivity"
-            android:exported="false" />
-        <activity
-            android:name=".listLahan"
             android:exported="false" />
         <activity
             android:name=".Activities.HomeActivity"
