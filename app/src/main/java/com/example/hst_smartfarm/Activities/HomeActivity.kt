@@ -45,7 +45,7 @@ class HomeActivity : AppCompatActivity(), NavigationBarView.OnItemSelectedListen
                 replaceFragment(MediaFragment())
                 return true
             }
-            R.id.bottom_otomasi -> {
+            R.id.bottom_automasi -> {
                 replaceFragment(MediaFragment())
                 return true
             }

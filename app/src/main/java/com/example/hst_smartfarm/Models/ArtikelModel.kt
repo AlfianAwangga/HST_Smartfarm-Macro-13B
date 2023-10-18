@@ -4,5 +4,6 @@ data class ArtikelModel(
     val gambar : Int,
     val judul : String,
     val tanggal : String,
-    val deskripsi : String
+    val deskripsi : String,
+    val penulis : String
 )

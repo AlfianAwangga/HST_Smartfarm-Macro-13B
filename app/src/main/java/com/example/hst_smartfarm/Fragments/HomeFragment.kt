@@ -10,6 +10,7 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.hst_smartfarm.Activities.ManajemenLahanActivity
 import com.example.hst_smartfarm.Activities.ModulActivity
 import com.example.hst_smartfarm.Activities.NotifActivity
+import com.example.hst_smartfarm.Activities.SupportActivity
 import com.example.hst_smartfarm.Activities.TokoActivity
 import com.example.hst_smartfarm.Models.CuacaModel
 import com.example.hst_smartfarm.Models.LahanModel
@@ -38,6 +39,7 @@ class HomeFragment : Fragment(), View.OnClickListener {
         binding.ivManajemen.setOnClickListener(this)
         binding.ivToko.setOnClickListener(this)
         binding.ivUpdate.setOnClickListener(this)
+        binding.ivSupport.setOnClickListener(this)
 
         return binding.root
     }
@@ -59,6 +61,10 @@ class HomeFragment : Fragment(), View.OnClickListener {
             }
             R.id.iv_update -> {
                 val intent = Intent(activity, ModulActivity::class.java)
+                startActivity(intent)
+            }
+            R.id.iv_support -> {
+                val intent = Intent(activity, SupportActivity::class.java)
                 startActivity(intent)
             }
         }

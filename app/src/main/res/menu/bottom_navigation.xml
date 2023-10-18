@@ -9,8 +9,8 @@
         android:title="Media"
         android:icon="@drawable/bottom_media"/>
     <item
-        android:id="@+id/bottom_otomasi"
-        android:title="Otomasi"
+        android:id="@+id/bottom_automasi"
+        android:title="Automasi"
         android:icon="@drawable/bottom_otomasi"/>
     <item
         android:id="@+id/bottom_pengaturan"

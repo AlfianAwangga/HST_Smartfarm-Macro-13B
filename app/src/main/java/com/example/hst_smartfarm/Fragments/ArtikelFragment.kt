@@ -31,10 +31,10 @@ class ArtikelFragment : Fragment() {
 
         judulArtikel().forEachIndexed { index, judul ->
             dataList.add(
-                ArtikelModel(gambarArtikel().get(index), judul, tanggalUpload()[index], "deskripsi"))
+                ArtikelModel(gambarArtikel().get(index), judul, tanggalUpload()[index], deskripsi()[index], penulis()[index]))
         }
 
-        adapterArtikel = ArtikelAdapter(dataList)
+        adapterArtikel = ArtikelAdapter(context, dataList)
         binding.rvArtikel.adapter = adapterArtikel
     }
 
@@ -46,10 +46,16 @@ class ArtikelFragment : Fragment() {
     }
     private fun gambarArtikel() : List<Int> {
         return listOf(
-            R.drawable.lahan_padi,
-            R.drawable.lahan_tomat,
-            R.drawable.lahan_tomat,
-            R.drawable.lahan_padi
+            R.drawable.artikel,
+            R.drawable.artikel2,
+            R.drawable.artikel3,
+            R.drawable.artikel4
         )
+    }
+    private fun deskripsi() : Array<String> {
+        return resources.getStringArray(R.array.deskripsiArtikel)
+    }
+    private fun penulis() : Array<String> {
+        return resources.getStringArray(R.array.penulisArtikel)
     }
 }

@@ -44,11 +44,11 @@ class VideoFragment : Fragment() {
     }
     private fun gambarVideo() : List<Int> {
         return listOf(
-            R.drawable.lahan_padi,
-            R.drawable.lahan_tomat,
-            R.drawable.lahan_tomat,
-            R.drawable.lahan_padi,
-            R.drawable.lahan_padi
+            R.drawable.artikel,
+            R.drawable.artikel2,
+            R.drawable.artikel3,
+            R.drawable.artikel4,
+            R.drawable.artikel4
         )
     }
 }
