@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="150dp"
+    android:layout_marginBottom="16dp"
+    android:background="@drawable/stroke_grey">
+
+    <TextView
+        android:id="@+id/tv_judul_automasi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="12dp"
+        android:text="Teks Automasi"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_tugas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="2 Tugas"
+        app:layout_constraintStart_toStartOf="@+id/tv_judul_automasi"
+        app:layout_constraintTop_toBottomOf="@+id/tv_judul_automasi" />
+
+    <ImageView
+        android:id="@+id/iv_automasi1"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/tv_tugas"
+        app:layout_constraintTop_toTopOf="@+id/switch_automasi" />
+
+    <Switch
+        android:id="@+id/switch_automasi"
+        android:layout_width="80dp"
+        android:layout_height="60dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <ImageView
+        android:id="@+id/iv_automasi2"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="42dp"
+        app:layout_constraintStart_toEndOf="@+id/iv_automasi1"
+        app:layout_constraintTop_toTopOf="@+id/iv_automasi1" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        app:layout_constraintBottom_toBottomOf="@+id/iv_automasi2"
+        app:layout_constraintStart_toEndOf="@+id/iv_automasi2"
+        app:layout_constraintTop_toTopOf="@+id/iv_automasi2"
+        app:srcCompat="@drawable/icon_line" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="12dp"
+        app:layout_constraintStart_toEndOf="@+id/imageView5"
+        app:layout_constraintTop_toTopOf="@+id/iv_automasi2"
+        app:srcCompat="@drawable/icon_chip" />
+</androidx.constraintlayout.widget.ConstraintLayout>

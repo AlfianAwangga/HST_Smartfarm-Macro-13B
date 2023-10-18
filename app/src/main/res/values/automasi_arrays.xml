@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="judulAutomasi">
+        <item>Penyiraman Otomatis Padi Rojo Lele</item>
+        <item>Penyiraman Otomatis Tomat Cheri</item>
+        <item>Penyiraman Otomatis Padi Rojo Lele</item>
+    </string-array>
+    <string-array name="jumlahTugas">
+        <item>2 Tugas</item>
+        <item>1 Tugas</item>
+        <item>2 Tugas</item>
+    </string-array>
+</resources>

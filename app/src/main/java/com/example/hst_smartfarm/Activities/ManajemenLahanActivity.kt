@@ -23,12 +23,17 @@ class ManajemenLahanActivity : AppCompatActivity(), View.OnClickListener {
         setLahanAdapter()
 
         binding.ivBack.setOnClickListener(this)
+        binding.ivAdd.setOnClickListener(this)
     }
 
     override fun onClick(v: View) {
         when(v.id) {
             R.id.iv_back ->{
                 val intent = Intent(this@ManajemenLahanActivity, HomeActivity::class.java)
+                startActivity(intent)
+            }
+            R.id.iv_add ->{
+                val intent = Intent(this@ManajemenLahanActivity, TambahModulActivity::class.java)
                 startActivity(intent)
             }
         }

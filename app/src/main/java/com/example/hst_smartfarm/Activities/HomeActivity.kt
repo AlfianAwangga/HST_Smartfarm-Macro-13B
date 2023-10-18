@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.MenuItem
 import androidx.fragment.app.Fragment
+import com.example.hst_smartfarm.Fragments.AutomasiFragment
 import com.example.hst_smartfarm.Fragments.HomeFragment
 import com.example.hst_smartfarm.Fragments.MediaFragment
 import com.example.hst_smartfarm.R
@@ -46,7 +47,7 @@ class HomeActivity : AppCompatActivity(), NavigationBarView.OnItemSelectedListen
                 return true
             }
             R.id.bottom_automasi -> {
-                replaceFragment(MediaFragment())
+                replaceFragment(AutomasiFragment())
                 return true
             }
             R.id.bottom_pengaturan -> {
