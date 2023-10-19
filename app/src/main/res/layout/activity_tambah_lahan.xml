@@ -110,7 +110,7 @@
 
     <Button
         android:id="@+id/btn_tambah"
-        android:layout_width="wrap_content"
+        android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
         android:text="Tambah"

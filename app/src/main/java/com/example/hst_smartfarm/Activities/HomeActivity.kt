@@ -7,6 +7,7 @@ import androidx.fragment.app.Fragment
 import com.example.hst_smartfarm.Fragments.AutomasiFragment
 import com.example.hst_smartfarm.Fragments.HomeFragment
 import com.example.hst_smartfarm.Fragments.MediaFragment
+import com.example.hst_smartfarm.Fragments.SettingFragment
 import com.example.hst_smartfarm.R
 import com.example.hst_smartfarm.databinding.ActivityHomeBinding
 import com.google.android.material.navigation.NavigationBarView
@@ -19,11 +20,6 @@ class HomeActivity : AppCompatActivity(), NavigationBarView.OnItemSelectedListen
         binding = ActivityHomeBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-//        val bundle = intent.extras
-
-//        if (bundle != null) {
-//            bindingHomeFragment.tvHomeNama.setText(bundle.getString("nama"))
-//        }
         binding.bottomNavigation.setOnItemSelectedListener(this)
         replaceFragment(HomeFragment())
     }
@@ -51,7 +47,7 @@ class HomeActivity : AppCompatActivity(), NavigationBarView.OnItemSelectedListen
                 return true
             }
             R.id.bottom_pengaturan -> {
-                replaceFragment(MediaFragment())
+                replaceFragment(SettingFragment())
                 return true
             }
             else -> return false

@@ -1,9 +1,12 @@
 package com.example.hst_smartfarm.Activities
 
 import android.content.Intent
+import android.graphics.ColorMatrix
+import android.graphics.ColorMatrixColorFilter
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
+import android.widget.ImageView
 import com.example.hst_smartfarm.R
 import com.example.hst_smartfarm.Models.UserModel
 import com.example.hst_smartfarm.databinding.ActivityLoginBinding
@@ -28,6 +31,7 @@ class LoginActivity : AppCompatActivity(), View.OnClickListener {
         //onclick
         binding.tvDaftar.setOnClickListener(this)
         binding.btnLogin.setOnClickListener(this)
+
     }
 
     override fun onClick(v: View) {

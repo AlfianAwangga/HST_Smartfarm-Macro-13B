@@ -18,11 +18,16 @@ class TambahLahanActivity : AppCompatActivity(), View.OnClickListener {
         binding.etModulTambah.setText(data?.getString("modul"))
 
         binding.ivBack.setOnClickListener(this)
+        binding.btnTambah.setOnClickListener(this)
     }
 
     override fun onClick(v: View) {
         when(v.id) {
             R.id.iv_back -> {
+                val intent = Intent(this@TambahLahanActivity, HomeActivity::class.java)
+                startActivity(intent)
+            }
+            R.id.btn_tambah -> {
                 val intent = Intent(this@TambahLahanActivity, HomeActivity::class.java)
                 startActivity(intent)
             }

@@ -136,7 +136,7 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
             android:layout_marginTop="8dp"
-            android:text="Nama Lengkap"
+            android:text="Somad"
             android:textColor="#FFFFFF"
             android:textSize="16sp"
             android:textStyle="bold"
